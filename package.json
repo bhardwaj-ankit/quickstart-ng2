@@ -60,5 +60,8 @@
     "@types/node": "^6.0.46",
     "@types/jasmine": "2.5.36"
   },
-  "repository": {"https://github.com/bhardwaj-ankit/quickstart-ng2"}
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhardwaj-ankit/quickstart-ng2.git"
+  }
 }
