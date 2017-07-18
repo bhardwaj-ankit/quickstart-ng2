@@ -1,8 +1,9 @@
-import { AppComponent } from './app.component';
+/*import { AppComponent } from './app.component';
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 describe('AppComponent', function () {
   let de: DebugElement;
@@ -30,4 +31,22 @@ describe('AppComponent', function () {
     expect(h1.innerText).toMatch(/angular/i,
       '<h1> should say something about "Angular"');
   });
+});
+*/
+import { AppComponent } from './app.component';
+
+describe('AppComponent', ()=>{
+
+  //const App = new AppComponent();
+
+  it('should add 1+1', ()=>{
+    expect(1+1).toEqual(2);
+  });
+
+  it('name should contain angular', ()=>{
+    const App = new AppComponent();
+    console.log(App);
+    expect(App.name).toContain('Angular')
+  })
+
 });

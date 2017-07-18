@@ -23,7 +23,7 @@ export class ChildoneComponent implements OnInit {
 	public con = true;
 	public lastVisitedId:number;
 	public imageLink = 'http://lorempixel.com/400/200';
-	childonedata : Array<object> = [];
+	childonedata  = new Array();
 	errorMsg:String;
 
 	constructor(private chiloneservice : ChildoneService, private router : Router, private route : ActivatedRoute){}
@@ -38,7 +38,7 @@ export class ChildoneComponent implements OnInit {
 
 	}
 
-	onClick(childone){
+	onClick(childone:){
 		this.router.navigate(['/childone',childone.id]);
 	}
 }
