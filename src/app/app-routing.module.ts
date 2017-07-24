@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 //Importing Components
+import { AppComponent } from './app.component';
+
 import { ChildoneComponent } from './childOne/childone.component';
 import { LadhComponent } from './childOne/ladh.component';
 import { PageNotFoundComponent } from './page-not-found.component';
@@ -10,7 +12,7 @@ import { PageComponent } from './page.component';
 import { PnfComponent } from './pnf.component';
 
 const route: Routes = [
-		{ 'path' : '', redirectTo : 'a', pathMatch : 'full'},
+		{ 'path' : '', component : AppComponent},
 		{ 'path' : 'childone', component : ChildoneComponent},
 		{ 'path' : 'childone/:id', component : LadhComponent},
 		{ 'path' : 'pnf', component : PnfComponent},

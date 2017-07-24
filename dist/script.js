@@ -328,12 +328,12 @@ var core_1 = require('@angular/core');
 var PageComponent = (function () {
     function PageComponent() {
     }
-    PageComponent.prototype.onsubmit = function (param) {
+    PageComponent.prototype.onSubmit = function (param) {
         console.log(param);
     };
     PageComponent = __decorate([
         core_1.Component({
-            template: "<h2>Page Not Found Sorry!</h2>\n\t\t\t\t<h3>USER DATA</h3>\n\t\t\t\t<form #userForm=\"ngForm\" (ngSubmit)=\"onSubmit(userForm.value)\">\n\t\t\t\t\t<div class='formGroup'>\n\t\t\t\t\t\t<label>Name</label>\n\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"Name\" ngModel>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class='formGroup'>\n\t\t\t\t\t\t<label>Add</label>\n\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"Add\" ngModel>\n\t\t\t\t\t</div>\n\t\t\t\t\t<button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n\t\t\t\t</form>\n\t\t\t\t<router-outlet></router-outlet>"
+            template: "<h2>Page Not Found Sorry!</h2>\n\t\t\t\t<h3>USER DATA</h3>\n\t\t\t\t<form #userForm=\"ngForm\" (ngSubmit)=\"onSubmit(userForm.value)\">\n\t\t\t\t\t<div class='formGroup'>\n\t\t\t\t\t\t<label>Name</label>\n\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"Name\" ngModel>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class='formGroup' ngModelGroup=\"address\">\n\t\t\t\t\t\t<label>Add</label>\n\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" name=\"Add\" ngModel>\n\t\t\t\t\t</div>\n\t\t\t\t\t<button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n\t\t\t\t</form>\n\t\t\t\t"
         }), 
         __metadata('design:paramtypes', [])
     ], PageComponent);
